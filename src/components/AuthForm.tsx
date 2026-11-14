@@ -27,7 +27,7 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
   }
 
   return (
-    <main className="mx-auto flex w-full max-w-sm flex-1 flex-col justify-center p-4">
+    <main className="mx-auto flex w-full max-w-sm flex-1 flex-col justify-center p-4 pt-[max(1rem,env(safe-area-inset-top))]">
       <h1 className="mb-1 text-2xl font-bold text-emerald-600">Splitly</h1>
       <p className="mb-6 text-sm text-zinc-500">
         {mode === "login" ? "Sign in to your account" : "Create an account"}

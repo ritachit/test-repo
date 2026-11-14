@@ -12,7 +12,7 @@ export function Nav({ user }: { user: PublicUser }) {
     router.refresh();
   }
   return (
-    <header className="border-b border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
+    <header className="border-b border-zinc-200 bg-white pt-[env(safe-area-inset-top)] dark:border-zinc-800 dark:bg-zinc-900">
       <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3">
         <Link href="/dashboard" className="text-lg font-bold text-emerald-600">
           Splitly
